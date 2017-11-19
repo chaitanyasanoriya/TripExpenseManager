@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccc99"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.techlove.tripexpensemanager.StrtTripActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Starting A trip"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="26dp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/text_strt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Starting date :"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <DatePicker
+            android:id="@+id/datePicker_strt_1"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_below="@+id/text_strt_1"
+            android:layout_marginTop="-10dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:forceHasOverlappingRendering="false" />
+
+        <TextView
+            android:id="@+id/text_strt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datePicker_strt_1"
+            android:layout_marginLeft="10dp"
+            android:text="Ending date :"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <DatePicker
+            android:id="@+id/datePicker_strt_2"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_below="@+id/text_strt_2"
+            android:layout_marginTop="-10dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+        <EditText
+            android:id="@+id/editText_strt_1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/datePicker_strt_2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="Approved Budget"
+            android:inputType="number"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editText_strt_2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/editText_strt_1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="Trip ID"
+            android:inputType="number"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="#990033"
+            android:onClick="save1"
+            android:text="Save"
+            android:textColor="#ffffff"
+            android:textSize="24dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
